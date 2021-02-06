@@ -1,0 +1,83 @@
+.container {
+    height: 100vh;
+}
+.page-content {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 50px;
+    height: 600px;
+    max-height: 100%;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.09); 
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.09);
+    margin-top: 2em;
+}
+.page-content--inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(max-width: 991px) {
+    .page-content--inner {
+        height: 37em;
+        flex-direction: column;
+        padding: 1em;
+    }
+}
+.login-form {
+    height: 600px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.login__image {
+    width: 400px;
+    margin-left: 6em;
+}
+@media(max-width: 991px) {
+    .login__image {
+        display: none;
+    }
+}
+.login__title {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.input__login, .input__password {
+    width: 70%;
+    padding: 1em;
+    border: 2px solid rgb(218, 218, 218);
+    margin: 1em;
+    border-radius: 50px;
+    outline: none;
+    font-size: 14px;
+    color: rgb(168, 168, 168);
+}
+.input__login:focus, .input__password:focus {
+    border-color: var(--generalPageColor);
+    color: var(--generalPageColor);
+}
+.button__submit {
+    position: relative;
+    padding: 15px 50px;
+    border: 2px solid var(--generalPageColor);
+    color: var(--generalPageColor);
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    outline-color: var(--generalPageColor);
+
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+.button__submit:hover {
+    transform: translateY(2px);
+    background-color: var(--generalPageColor);
+    color: white;
+}

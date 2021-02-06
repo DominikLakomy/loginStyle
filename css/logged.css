@@ -1,0 +1,20 @@
+.image-checked {
+    width: 100px;
+    margin-top: 1em;
+}
+.logged {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+a:hover {
+    color: var(--generalPageColor);
+    background-color: white;
+    padding: 0.5em;
+}

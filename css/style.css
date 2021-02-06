@@ -1,0 +1,17 @@
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fjalla One', sans-serif;
+}
+:root {
+    --generalPageColor: rgb(0, 174, 255);
+}
+::selection {
+    background-color: var(--generalPageColor);
+    color: white;
+}
